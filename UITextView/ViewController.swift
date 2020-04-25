@@ -30,7 +30,9 @@ extension ViewController: UITextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
         let text = textView.text
-        
+        let attributedText = textView.textStorage
+        let originColor = textView.textColor
+
         //Finds and returns the range of the [first occurrence] of a given string
 //        if let range = text?.range(of: "John", options: .caseInsensitive) {
 //            let attributedText = textView.textStorage
@@ -48,6 +50,12 @@ extension ViewController: UITextViewDelegate {
                 let attributedText = textView.textStorage
                 attributedText.addAttribute(.foregroundColor, value: UIColor.green, range: NSRange(range, in: text!))
             }
+            
+            //return from the custom attribute config of key word to the original attrubute config
+            let lastRange = ranges[ranges.count - 1]
+            let startIndex = lastRange.upperBound
+            let endIndex = text?.endIndex
+            attributedText.addAttribute(.foregroundColor, value: originColor!, range: NSRange(startIndex..<endIndex!, in: text!))
         }
     }
     
