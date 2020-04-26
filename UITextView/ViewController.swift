@@ -42,12 +42,6 @@ extension ViewController: UITextViewDelegate {
         //Find and return the ranges of [all the occurrences] of a given string in Swift
         if let ranges = text?.rangesOf(string: "John", options: .caseInsensitive) {
             for range in ranges {
-                //because textStorage: NSTextStorage class is the reference type
-                //As assigned the textStorage property to attributedText variable
-                //means that both of attributedText and textStorage variables share the same object
-                //to change any of one is the same thing.
-                //That's the different between class and structure
-                let attributedText = textView.textStorage
                 attributedText.addAttribute(.foregroundColor, value: UIColor.green, range: NSRange(range, in: text!))
             }
             
