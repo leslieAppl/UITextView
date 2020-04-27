@@ -14,3 +14,8 @@
         textFieldDidEndEditing()
         func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
 
+## Open and Close Keyboard
+
+    UIResponder.becomeFirstResponder()
+    UIResponder.resignFirstResponder()
+

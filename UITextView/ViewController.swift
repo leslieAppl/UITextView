@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         let attributedText = message.textStorage
         attributedText.addAttribute(.foregroundColor, value: UIColor.red, range: message.selectedRange)
         message.selectedTextRange = nil
+        
+        message.resignFirstResponder()
     }
     
     @IBAction func changeTitle(_ sender: UIButton) {
@@ -38,11 +40,13 @@ class ViewController: UIViewController {
             
             titleInput.endEditing(true)
             subTitleInput.endEditing(true)
+            
+//textField resigns first respondder to close keyboard
+            titleInput.resignFirstResponder()
+        } else {
+//textField resigns first respondder to close keyboard
+            titleInput.becomeFirstResponder()
         }
-    }
-    
-    @IBAction func changeTitle2(_ sender: UIButton) {
-        
     }
 }
 

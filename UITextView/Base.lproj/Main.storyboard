@@ -43,7 +43,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8OM-ZO-543"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Select and Close Keyboard">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -61,7 +61,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="hql-4p-M48"/>
                                 </constraints>
-                                <state key="normal" title="Save">
+                                <state key="normal" title="Save and Close Keyboard">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
