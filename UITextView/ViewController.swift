@@ -109,6 +109,28 @@ extension ViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         textField.backgroundColor = self.originalBGColor
     }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        var maximum = 0
+        if textField.tag == 1 {
+            maximum = 10
+        } else {
+            maximum = 15
+        }
+        if let text = textField.text {
+            let total = text.count + string.count - range.length
+            print("Text: \(text.count)")
+            print("string: \(string.count)")
+            print("range: \(range.length)")
+            print("total: \(total)")
+
+            if total > maximum {
+                return false
+            }
+        }
+        
+        return true
+    }
 
 }
 

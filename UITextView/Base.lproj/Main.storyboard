@@ -79,19 +79,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pu-x6-MB9">
-                                <rect key="frame" x="20" y="380" width="374" height="30"/>
-                                <color key="backgroundColor" red="0.015686274510000001" green="0.6705882353" blue="0.92449144260000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="vai-aI-8az"/>
-                                </constraints>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeTitle2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q43-un-roi"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -105,13 +92,10 @@
                             <constraint firstItem="CzN-EQ-cEA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SAK-ZY-0Wd"/>
                             <constraint firstItem="YJF-JO-Grx" firstAttribute="top" secondItem="CzN-EQ-cEA" secondAttribute="bottom" constant="20" id="SzR-zg-SeR"/>
                             <constraint firstItem="yzO-XY-Mx6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aY5-1N-WbM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7pu-x6-MB9" secondAttribute="trailing" constant="20" id="adD-GT-JC7"/>
                             <constraint firstItem="gN2-Q7-vGR" firstAttribute="top" secondItem="yzO-XY-Mx6" secondAttribute="bottom" constant="20" id="azc-Za-Dkf"/>
-                            <constraint firstItem="7pu-x6-MB9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eEf-Ju-MLo"/>
                             <constraint firstItem="jOt-2q-Mhp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fX1-br-G6T"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yzO-XY-Mx6" secondAttribute="trailing" constant="20" id="oQv-PL-34s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jOt-2q-Mhp" secondAttribute="trailing" constant="20" id="t6Z-Fg-3nQ"/>
-                            <constraint firstItem="7pu-x6-MB9" firstAttribute="top" secondItem="jOt-2q-Mhp" secondAttribute="bottom" constant="20" id="uAP-gV-tSb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YtF-9V-tWU" secondAttribute="trailing" constant="20" id="w3b-WY-XpR"/>
                             <constraint firstItem="YJF-JO-Grx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="w6R-YA-Ygh"/>
                             <constraint firstItem="gN2-Q7-vGR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wpg-1E-zuy"/>
