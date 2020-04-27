@@ -38,6 +38,7 @@ class ViewController: UIViewController {
             titleInput.text = ""
             subTitleInput.text = ""
             
+//UIResponder.endEditing(Bool) == .resignFirstResponder() to dismiss keyboard
             titleInput.endEditing(true)
             subTitleInput.endEditing(true)
             
@@ -47,6 +48,16 @@ class ViewController: UIViewController {
 //textField resigns first respondder to close keyboard
             titleInput.becomeFirstResponder()
         }
+    }
+
+//UIResponder.touchesBegan() to detect touch events on screen
+//Dismissing the keyboard when the user touches the screen
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+//        titleInput.resignFirstResponder() //refactored by UIResponder.endEditing(Bool)
+//UIResponder.endEditing(Bool) == .resignFirstResponder() to dismiss keyboard
+        view.endEditing(true)
     }
 }
 
