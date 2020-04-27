@@ -9,13 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var originalBGColor: UIColor!
     @IBOutlet weak var message: UITextView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleInput: UITextField!
+    @IBOutlet weak var subTitleInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         message.delegate = self
+        titleInput.delegate = self
+        subTitleInput.delegate = self
     }
 
     @IBAction func selection(_ sender: UIButton) {
@@ -24,6 +30,20 @@ class ViewController: UIViewController {
         message.selectedTextRange = nil
     }
     
+    @IBAction func changeTitle(_ sender: UIButton) {
+        if titleInput.text != "" && subTitleInput.text != "" {
+            titleLabel.text = titleInput.text! + "-" + subTitleInput.text!
+            titleInput.text = ""
+            subTitleInput.text = ""
+            
+            titleInput.endEditing(true)
+            subTitleInput.endEditing(true)
+        }
+    }
+    
+    @IBAction func changeTitle2(_ sender: UIButton) {
+        
+    }
 }
 
 extension ViewController: UITextViewDelegate {
@@ -33,7 +53,7 @@ extension ViewController: UITextViewDelegate {
         let attributedText = textView.textStorage
         let originColor = textView.textColor
 
-        //Finds and returns the range of the [first occurrence] of a given string
+//Finds and returns the range of the [first occurrence] of a given string
 //        if let range = text?.range(of: "John", options: .caseInsensitive) {
 //            let attributedText = textView.textStorage
 //            attributedText.addAttribute(.foregroundColor, value: UIColor.green, range: NSRange(range,in: text!))
@@ -76,5 +96,19 @@ extension String {
 
 }
 
+extension ViewController: UITextFieldDelegate {
+    
+    
+    //self tells delegate that editing began in the specified text field
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.originalBGColor = textField.backgroundColor
+        textField.backgroundColor = UIColor.lightGray
+    }
+    
+    //self tells the delegate that editing stopped for the specified text field
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.backgroundColor = self.originalBGColor
+    }
 
+}
 
