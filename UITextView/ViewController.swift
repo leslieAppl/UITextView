@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         message.delegate = self
         titleInput.delegate = self
         subTitleInput.delegate = self
+        
+        if let myPattern = UIImage(named: "oranges") {
+            view.backgroundColor = UIColor(patternImage: myPattern)
+        }
     }
 
     @IBAction func selection(_ sender: UIButton) {

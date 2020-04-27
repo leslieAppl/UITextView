@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEA3C16524571ADB00E2A445 /* oranges@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA3C16224571ADB00E2A445 /* oranges@3x.png */; };
+		CEA3C16624571ADB00E2A445 /* oranges.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA3C16324571ADB00E2A445 /* oranges.png */; };
+		CEA3C16724571ADB00E2A445 /* oranges@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA3C16424571ADB00E2A445 /* oranges@2x.png */; };
 		CEF9895424528ECB00760F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9895324528ECB00760F55 /* AppDelegate.swift */; };
 		CEF9895624528ECB00760F55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9895524528ECB00760F55 /* SceneDelegate.swift */; };
 		CEF9895824528ECB00760F55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9895724528ECB00760F55 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEA3C16224571ADB00E2A445 /* oranges@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oranges@3x.png"; sourceTree = "<group>"; };
+		CEA3C16324571ADB00E2A445 /* oranges.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oranges.png; sourceTree = "<group>"; };
+		CEA3C16424571ADB00E2A445 /* oranges@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oranges@2x.png"; sourceTree = "<group>"; };
 		CEF9895024528ECB00760F55 /* UITextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF9895324528ECB00760F55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF9895524528ECB00760F55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 				CEF9895524528ECB00760F55 /* SceneDelegate.swift */,
 				CEF9895724528ECB00760F55 /* ViewController.swift */,
 				CEF9895924528ECB00760F55 /* Main.storyboard */,
+				CEA3C16324571ADB00E2A445 /* oranges.png */,
+				CEA3C16424571ADB00E2A445 /* oranges@2x.png */,
+				CEA3C16224571ADB00E2A445 /* oranges@3x.png */,
 				CEF9895C24528ED200760F55 /* Assets.xcassets */,
 				CEF9895E24528ED200760F55 /* LaunchScreen.storyboard */,
 				CEF9896124528ED200760F55 /* Info.plist */,
@@ -125,9 +134,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA3C16724571ADB00E2A445 /* oranges@2x.png in Resources */,
 				CEF9896024528ED200760F55 /* LaunchScreen.storyboard in Resources */,
+				CEA3C16624571ADB00E2A445 /* oranges.png in Resources */,
 				CEF9895D24528ED200760F55 /* Assets.xcassets in Resources */,
 				CEF9895B24528ECB00760F55 /* Main.storyboard in Resources */,
+				CEA3C16524571ADB00E2A445 /* oranges@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,3 +28,10 @@
                 way 1: textView.resignFirstResponder()
                 way 2: view.endEditing(true)
         }
+
+
+## UIColor(patternImage: UIImage)
+
+        if let myPattern = UIImage(named: "oranges") {
+            view.backgroundColor = UIColor(patternImage: myPattern)
+        }
